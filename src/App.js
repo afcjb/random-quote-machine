@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-
-
 function App() {
   const [quote, setQuote] = useState("");
 
@@ -14,12 +12,20 @@ function App() {
   const URL = "https://api.quotable.io/random";
   const tweetLink = `https://twitter.com/intent/tweet?hashtags=quotes ${quote.content} \n${quote.author}`;
 
-  const randomQuote = () =>
+  /* const randomQuote = () =>
     fetch(URL)
       .then((response) => response.json())
       .then((data) => {
         setQuote(data);
-      });
+      }); */
+
+  const randomQuote = async () => {
+    const res = await fetch(URL);
+    console.log(res.ok);
+    const data = await res.json();
+    console.log(data);
+    setQuote(data);
+  };
 
   return (
     <div id="wrapper" className="container">
