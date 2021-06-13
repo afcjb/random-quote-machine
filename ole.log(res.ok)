@@ -1,0 +1,11 @@
+[33mcommit 9182985828d5f3e6ddbc4d8c3c7a7170d48c6e76[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: André Bastos <afcjb@protonmail.com>
+Date:   Sun Jun 13 12:21:01 2021 +0100
+
+    changed fetch to async await for learning purposes
+
+[33mcommit 99c1830dfb42fb3c28f6c1221f16c15d99a35d96[m
+Author: André Bastos <afcjb@protonmail.com>
+Date:   Fri Jun 11 11:04:40 2021 +0100
+
+    first commit, includes the finished project tho

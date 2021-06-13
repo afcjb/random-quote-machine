@@ -20,11 +20,15 @@ function App() {
       }); */
 
   const randomQuote = async () => {
-    const res = await fetch(URL);
-    console.log(res.ok);
-    const data = await res.json();
-    console.log(data);
-    setQuote(data);
+    try {
+      const res = await fetch(URL);
+      console.log(res.ok);
+      const data = await res.json();
+      console.log(data);
+      setQuote(data);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
